@@ -1,0 +1,94 @@
+:root {
+    --salmon: #ef9d71;
+    --black: #000;
+    --white: #fff;
+    --cyan: #aedee0;
+    --dsalmon: rgb(70, 28, 24);
+    --dcyan: #1f2f32;
+
+}
+
+body {
+    transition: background-color ease-out 0.5s !important;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.videodiv {
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+*::selection {
+    background-color: var(--salmon);
+}
+
+body[theme="black"] {
+    background-color: var(--black);
+}
+
+body[theme="black"] .section {
+    color: var(--white);
+}
+
+body[theme="cyan"] {
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section {
+    color: var(--dcyan);
+}
+
+body[theme="salmon"] {
+    background-color: var(--salmon);
+}
+
+body[theme="salmon"] .section {
+    color: var(--dsalmon);
+}
+
+body[theme="light"] {
+    background-color: white;
+}
+
+body[theme="light"] .section {
+    color: #000;
+}
+
+
+#carft-header h1, .btnTag h1{
+    overflow: hidden;
+}
+
+#carft-header h1 span{
+    display: inline-block;
+    ;
+}
+
+.btnTag h1 span{
+    display: inline-block;
+}
+
+.cardcon1 h1, .cardcon1 p, .cardcon1 i{
+    color: black ;
+}
+
+@media screen and (max-width: 1024px) {
+    .capsule2 {
+        transform: rotate(0deg) !important;
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .video-element {
+        width: 100vw !important;
+        height: 100vh !important;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
